@@ -8,19 +8,47 @@ body {
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding:20px;
     min-height: 100vh;
+    position:relative;
+    justify-content: center;
+    overflow:hidden;
+
 }
 
-.intro h1 {
+.introcontent {
+    position: relative;
+    z-index: 1;
+    padding:20px;
+}
+
+.introcontent h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 90px;
     font-weight: 500;
 }
 
-.intro p {
+.introcontent p {
     margin-top:15px;
     font-size:40px;
     letter-spacing: 2px;
     color:aliceblue;
 }
+
+/*full screen vid*/
+.introvid {
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.introlay {
+    position: absolute;
+    inset:0;
+}
+
+.hidden {
+    display:none;
+}
+
