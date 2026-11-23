@@ -1,0 +1,26 @@
+body {
+    background: black;
+    color:azure;
+    font-family:'Montserrat',sans-serif;
+}
+
+.intro {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    min-height: 100vh;
+}
+
+.intro h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 90px;
+    font-weight: 500;
+}
+
+.intro p {
+    margin-top:15px;
+    font-size:40px;
+    letter-spacing: 2px;
+    color:aliceblue;
+}
