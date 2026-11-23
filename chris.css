@@ -103,7 +103,7 @@ body {
 }
 
 .intro, .story {
-    background-image: url("assets/Screenshot\ 2026-11-23\ 220350.png");
+    background-image: url("assets/55.png");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("assets/6161172.jpg");
+    background-image: url("assets/image.png");
     background-size:cover;
 }
 
