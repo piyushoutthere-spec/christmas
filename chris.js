@@ -2,6 +2,7 @@ const introvid = document.querySelector(".introvid");
 const introcontent = document.querySelector(".introcontent");
 const intro = document.querySelector(".intro");
 const stories= document.querySelectorAll(".story");
+const end= document.querySelector(".ending");
 
 // reveal gretting after vid ends
 introvid.addEventListener("ended",() => {
@@ -28,6 +29,9 @@ stories.forEach((story,index) => {
 
         if(index+1 < stories.length) {
             stories[index+1].classList.remove("hidden");
+        }
+        else {
+            end.classList.remove("hidden");
         }
     });
 });
