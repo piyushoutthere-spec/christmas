@@ -1,7 +1,7 @@
 const introvid = document.querySelector(".introvid");
 const introcontent = document.querySelector(".introcontent");
 const intro = document.querySelector(".intro");
-const story= document.querySelector(".story");
+const stories= document.querySelectorAll(".story");
 
 // reveal gretting after vid ends
 introvid.addEventListener("ended",() => {
@@ -11,9 +11,23 @@ introvid.addEventListener("ended",() => {
     //open story after 3 sec
     setTimeout(() => {
         intro.classList.add("hidden");
-        story.classList.remove("hidden");
+        stories[0].classList.remove("hidden");
 
         window.scrollTo(0,0);
     },3000);
 
+});
+
+//continue to next chapter
+stories.forEach((story,index) => {
+
+    const button=story.querySelector(".nextbtn");
+
+    button.addEventListener("click",() => {
+        story.classList.add("hidden");
+
+        if(index+1 < stories.length) {
+            stories[index+1].classList.remove("hidden");
+        }
+    });
 });
